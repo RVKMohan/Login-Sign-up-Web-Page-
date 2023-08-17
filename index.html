@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign-In & Sign-Up</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="container forms">
+        <video autoplay muted loop id="myVideo">
+            <source src="vd1.mp4" type="video/mp4">
+        </video> 
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="First Name" id="firstname" placeholder="First Name" class="input" />
+                    </div>
+                    <div class="field input-field">
+                        <input type="Last Name" id="lastname" placeholder="Last Name" class="input" />
+                    </div>
+                    <div class="field input-field">
+                        <input type="email" id="email" placeholder="Email" class="input" />
+                    </div>
+                    <div class="field input-field">
+                        <input type="Phone Number" id="phonenumber" placeholder="Phone Number" class="input" />
+                    </div>
+                    <div class="field input-field">
+                        <input type="date" id="dateofbirth" placeholder="Date-of-Birth " />
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="password" placeholder=" New password" class="password" />
+                        
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" id="cpassword" placeholder=" confirm password" class="password" />
+                        <i class="bx bx-hide eye-icon"></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button onclick="register()">Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account?
+                        <a href="index1.html" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""
+                        class="google-img" />
+                    <span onclick="loginGoogle()">sign-in with Google</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field Apple">
+                    <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt=""
+                        class="Apple-img" />
+                    <span>sign-in with Apple</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field Microsoft">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="" class="Microsoft-img" />
+                    <span>sign-in with Microsoft</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class="bx bxl-facebook facebook-icon"></i>
+                    <span onclick="loginfb()">sign-in with Facebook</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" id="email" placeholder="Email" class="input" />
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="password" placeholder="Password" class="password" />
+                        <i class="bx bx-hide eye-icon"></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button onclick="login()">Login</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Don't have an account?
+                        <a href="index.html" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt=""
+                        class="google-img" />
+                    <span onclick="loginGoogle()">Login with Google</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field Apple">
+                    <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt=""
+                        class="Apple-img" />
+                    <span>Login with Apple</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field Microsoft">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="" class="Microsoft-img" />
+                    <span>Login with Microsoft</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class="bx bxl-facebook facebook-icon"></i>
+                    <span onclick="loginfb()">Login with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    
+        <!--firebase JavaScript-->
+    <script src="firebase.js"></script>
+
+    <!--JavaScript-->
+    <script src="scripts.js"></script>
+
+</html>
